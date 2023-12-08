@@ -1,0 +1,24 @@
+# @name get-prompts
+GET http://192.168.0.18:3333/prompts
+
+###
+# @name generate-ai-completion
+POST http://192.168.0.18:3333/ai/complete
+Content-Type: application/json
+
+{
+  "calories": "3200",
+  "goal": "Ganho de massa muscular",
+  "meals": "4",
+  "temperature": 0.3
+}
+
+###
+# @name question-ai-completion
+POST http://192.168.0.18:3333/ai-question/complete
+Content-Type: application/json
+
+{
+  "question": "Quem ganhou o jogo do inter ontem ?",
+  "temperature": 0.3
+}
